@@ -1,20 +1,39 @@
 # 4Clarity Recorder Releases
 
-This public repository contains release downloads for **4Clarity Recorder**.
+This public repository contains installer downloads for **4Clarity Recorder** on **Windows** and **macOS**.
 
-The application source code is private. This repository is only used to distribute signed and notarized installer builds.
+The application source code is private. This repository is used only to distribute installer builds and release notes.
+
+## Windows
+
+Download the latest Windows installer from the GitHub Releases page:
+
+https://github.com/aavo20/4clarity-recorder-releases/releases/latest
+
+Recommended asset:
+
+- `4Clarity.Recorder.Setup.0.1.0.exe`
+
+Installation steps:
+
+1. Download the `.exe` installer from the latest Windows release.
+2. Open the installer.
+3. Follow the setup prompts.
+4. Launch `4Clarity Recorder` from the Start menu or desktop shortcut.
+
+The Windows build includes the bundled local runtime. Transcript and summary models can be downloaded on first run or later from Settings.
 
 ## macOS Apple Silicon
 
-Download the latest macOS Apple Silicon DMG from the GitHub Releases page:
+Download the latest macOS Apple Silicon DMG from the macOS release page:
 
-https://github.com/aavo20/4clarity-recorder-releases/releases
+https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.1.0-beta.1-mac
 
 Supported devices:
 
 - Apple Silicon Macs: M1, M2, M3, M4, M5, and newer
 
-## Installation
+Installation steps:
 
 1. Download the `.dmg` file from GitHub Releases using Safari, Chrome, or another browser.
 2. Open the downloaded `.dmg`.
