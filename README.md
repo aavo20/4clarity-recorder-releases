@@ -1,53 +1,66 @@
-# 4Clarity Recorder Releases
+# 4Clarity Downloads
 
-This public repository contains installer downloads for **4Clarity Recorder** on **Windows** and **macOS**.
+Official installer downloads and release notes for **4Clarity**.
 
-The application source code is private. This repository is used only to distribute installer builds and release notes.
+The application source code is private. This public repository contains only
+release metadata and downloadable installers.
 
-## Windows
+## Download 4Clarity 0.2.3
 
-Download the latest Windows installer from the GitHub Releases page:
+| Platform | Device | Download |
+| --- | --- | --- |
+| Windows | 64-bit PC | [Windows x64 installer](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-win.2) |
+| macOS | Apple Silicon Mac | [Apple Silicon DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-mac.2) |
+| macOS | Intel Mac | [Intel DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-mac.3) |
 
-https://github.com/aavo20/4clarity-recorder-releases/releases/latest
+Download the installer listed for your device. The automatically generated
+**Source code** archives are not application installers.
 
-Recommended asset:
+All published versions and their release notes are available on the
+[Releases page](https://github.com/aavo20/4clarity-recorder-releases/releases).
 
-- `4Clarity.Recorder.Setup.0.1.0.exe`
+## Choosing a Mac Download
 
-Installation steps:
+Open **Apple menu > About This Mac** and check the processor information:
 
-1. Download the `.exe` installer from the latest Windows release.
-2. Open the installer.
-3. Follow the setup prompts.
-4. Launch `4Clarity Recorder` from the Start menu or desktop shortcut.
+- If it shows **Chip: Apple M-series**, download the Apple Silicon DMG.
+- If it shows **Processor: Intel**, download the Intel DMG.
 
-The Windows build includes the bundled local runtime. Transcript and summary models can be downloaded on first run or later from Settings.
+Both macOS builds require macOS 14.2 or later.
 
-## macOS Apple Silicon
+## Install on Windows
 
-Download the latest macOS Apple Silicon DMG from the macOS release page:
+1. Download `4Clarity_0.2.3_x64-setup.exe` from the Windows release.
+2. Open the installer and follow the setup prompts.
+3. Launch 4Clarity from the Start menu or desktop shortcut.
 
-https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.1.0-beta.1-mac
+The Windows installer is not currently code-signed. Microsoft Defender
+SmartScreen may ask for confirmation. Only continue when the installer was
+downloaded from this repository.
 
-Supported devices:
+## Install on macOS
 
-- Apple Silicon Macs: M1, M2, M3, M4, M5, and newer
+1. Download the DMG that matches your Mac processor.
+2. Open the downloaded DMG.
+3. Drag **4Clarity** into **Applications**.
+4. Launch 4Clarity from **Applications**.
 
-Installation steps:
+The macOS application and DMG are signed with the SWEETSOFT D.O.O. Developer ID
+and notarized by Apple. End users do not need an Apple Developer account.
 
-1. Download the `.dmg` file from GitHub Releases using Safari, Chrome, or another browser.
-2. Open the downloaded `.dmg`.
-3. Drag `4Clarity Recorder.app` into `Applications`.
-4. Launch the app from `Applications`.
+Download the DMG directly from GitHub rather than transferring it through a
+messaging application. Some sandboxed applications can add quarantine metadata
+that prevents an otherwise valid application from opening normally.
 
-Do not transfer the `.dmg` through Telegram or other messengers. macOS can hard-quarantine files created by sandboxed apps, which may prevent the app from opening even when the build is correctly signed and notarized.
+## Local Models
 
-## Signing and Notarization
+Transcription, speaker separation, and summary models are not included in the
+installer. They can be downloaded when first needed or managed later from
+**Settings**.
 
-Current macOS builds are signed and notarized with Apple Developer ID:
+## About the Source Code Archives
 
-- Developer ID Application: `SWEETSOFT D.O.O. (SJ2MUG2GFP)`
-- Apple notarization: accepted
-- Gatekeeper: accepted as `Notarized Developer ID`
-
-End users do not need an Apple Developer account.
+GitHub automatically adds **Source code (zip)** and **Source code (tar.gz)** to
+every tagged release. These archives are snapshots of this public downloads
+repository, not the private 4Clarity application source code. They cannot be
+removed from the GitHub Releases interface and can be ignored by end users.
