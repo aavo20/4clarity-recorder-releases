@@ -5,19 +5,42 @@ Official installer downloads and release notes for **4Clarity**.
 The application source code is private. This public repository contains only
 release metadata and downloadable installers.
 
-## Download 4Clarity 0.2.3
+## Download 4Clarity 0.2.4
 
-| Platform | Device | Download |
-| --- | --- | --- |
-| Windows | 64-bit PC | [Windows x64 installer](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-win.2) |
-| macOS | Apple Silicon Mac | [Apple Silicon DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-mac.2) |
-| macOS | Intel Mac | [Intel DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.3-mac.3) |
+| Platform | Device | Download | Release notes |
+| --- | --- | --- | --- |
+| Windows | x64 PC (Intel or AMD) | [Windows installer](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-win.1/4Clarity_0.2.4_x64-setup.exe) | [Windows release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-win.1) |
+| macOS | Apple Silicon Mac (M-series) | [Apple Silicon DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-mac.1/4Clarity_0.2.4_aarch64.dmg) | [Apple Silicon release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-mac.1) |
+| macOS | Intel Mac | [Intel DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-mac.2/4Clarity_0.2.4_x86_64.dmg) | [Intel release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-mac.2) |
 
 Download the installer listed for your device. The automatically generated
 **Source code** archives are not application installers.
 
 All published versions and their release notes are available on the
 [Releases page](https://github.com/aavo20/4clarity-recorder-releases/releases).
+
+## What's New in 0.2.4
+
+- **Complete Projects workspace:** recordings and notes in dedicated tabs with
+  counters, search, and clear empty states.
+- **Project notes:** add, edit, search, and delete individual dated notes.
+- **Project organization:** archive and restore finished projects, or permanently
+  delete a project while keeping its recordings and contacts.
+- **Richer project details:** manage descriptions, dates, tags, and linked contacts
+  in one focused editor.
+- **Easier navigation:** compact searchable project rows with recording counts and
+  quick actions; projects without dates no longer show placeholder metadata.
+- **Contact editor fixes:** entered values are preserved when validation or saving
+  fails, so corrections do not require re-entering the form.
+
+## Updating an Existing Installation
+
+Versions 0.2.3 and later check for new releases automatically once a day and offer
+the download for your operating system and processor. You can also check manually
+from **Settings** or use the download links above.
+
+Updates are downloaded and installed by you; the app does not replace itself
+automatically. Users on older versions can download 0.2.4 directly from this page.
 
 ## Choosing a Mac Download
 
@@ -30,7 +53,7 @@ Both macOS builds require macOS 14.2 or later.
 
 ## Install on Windows
 
-1. Download `4Clarity_0.2.3_x64-setup.exe` from the Windows release.
+1. Download `4Clarity_0.2.4_x64-setup.exe` from the Windows release.
 2. Open the installer and follow the setup prompts.
 3. Launch 4Clarity from the Start menu or desktop shortcut.
 
