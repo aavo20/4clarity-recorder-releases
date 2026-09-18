@@ -3,44 +3,58 @@
 Official installer downloads and release notes for **4Clarity**.
 
 The application source code is private. This public repository contains only
-release metadata and downloadable installers.
+release metadata, downloadable installers, and signed update packages.
 
-## Download 4Clarity 0.2.4
+## Download 4Clarity 0.2.5
 
 | Platform | Device | Download | Release notes |
 | --- | --- | --- | --- |
-| Windows | x64 PC (Intel or AMD) | [Windows installer](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-win.1/4Clarity_0.2.4_x64-setup.exe) | [Windows release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-win.1) |
-| macOS | Apple Silicon Mac (M-series) | [Apple Silicon DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-mac.1/4Clarity_0.2.4_aarch64.dmg) | [Apple Silicon release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-mac.1) |
-| macOS | Intel Mac | [Intel DMG](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.4-mac.2/4Clarity_0.2.4_x86_64.dmg) | [Intel release](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.4-mac.2) |
+| Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_x64-setup.exe) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
+| macOS | Apple Silicon Mac (M-series) | [Apple Silicon installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_aarch64.dmg) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
+| macOS | Intel Mac | [Intel installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_x86_64.dmg) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
 
-Download the installer listed for your device. The automatically generated
-**Source code** archives are not application installers.
+**Choose one installer for your device from the table above.** Not sure which Mac
+you have? See [Choosing a Mac Download](#choosing-a-mac-download).
+
+The `.app.tar.gz`, `.sig`, and `latest.json` files in the release assets are used
+by in-app updates; you do not need to download them manually. The automatically
+generated **Source code** archives are not application installers.
 
 All published versions and their release notes are available on the
 [Releases page](https://github.com/aavo20/4clarity-recorder-releases/releases).
 
-## What's New in 0.2.4
+## What's New in 0.2.5
 
-- **Complete Projects workspace:** recordings and notes in dedicated tabs with
-  counters, search, and clear empty states.
-- **Project notes:** add, edit, search, and delete individual dated notes.
-- **Project organization:** archive and restore finished projects, or permanently
-  delete a project while keeping its recordings and contacts.
-- **Richer project details:** manage descriptions, dates, tags, and linked contacts
-  in one focused editor.
-- **Easier navigation:** compact searchable project rows with recording counts and
-  quick actions; projects without dates no longer show placeholder metadata.
-- **Contact editor fixes:** entered values are preserved when validation or saving
-  fails, so corrections do not require re-entering the form.
+- **Email sharing:** verify your sender address, then send transcripts and
+  summaries with an optional message. Replies go to your verified address, and
+  your email session is stored in Windows Credential Manager or macOS Keychain.
+- **ZIP export and a compact Share screen:** choose selected audio, transcript,
+  and summary files for an archive. Email sharing includes text files only.
+- **Optional call reminders:** enable reminders for Zoom, Microsoft Teams, Slack,
+  Discord, and Telegram desktop apps. Recording starts only when you choose it.
+- **Startup and background options:** launch at login and keep the app available
+  from the Windows tray or macOS menu bar.
+- **Offline preparation:** download and manage local components in advance from
+  Settings, with progress, cancellation, and resume.
+- **Updated Home and Settings:** a recording overview, clearer settings tabs,
+  managed local-processing defaults, and more configurable keyboard shortcuts.
+- **Signed in-app updates:** download future updates in the app, then choose
+  **Install and restart** when ready.
+- **Reliability fixes:** improved settings-save recovery, microphone handling,
+  macOS permission feedback, and Windows call-reminder filtering.
+
+See the [full release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5)
+for all changes.
 
 ## Updating an Existing Installation
 
-Versions 0.2.3 and later check for new releases automatically once a day and offer
-the download for your operating system and processor. You can also check manually
-from **Settings** or use the download links above.
+**Upgrading from 0.2.4 or earlier:** download the 0.2.5 installer for your computer
+from the table above and run it to upgrade your existing installation.
 
-Updates are downloaded and installed by you; the app does not replace itself
-automatically. Users on older versions can download 0.2.4 directly from this page.
+**On 0.2.5:** official release builds support signed in-app updates. Check for
+updates in **Settings > About**. When a newer release is available, download it
+with progress and cancellation controls, then choose **Install and restart**.
+Installation never starts silently. You can also use the installers above.
 
 ## Choosing a Mac Download
 
@@ -53,7 +67,7 @@ Both macOS builds require macOS 14.2 or later.
 
 ## Install on Windows
 
-1. Download `4Clarity_0.2.4_x64-setup.exe` from the Windows release.
+1. Download `4Clarity_0.2.5_x64-setup.exe` from the table above.
 2. Open the installer and follow the setup prompts.
 3. Launch 4Clarity from the Start menu or desktop shortcut.
 
@@ -78,8 +92,9 @@ that prevents an otherwise valid application from opening normally.
 ## Local Models
 
 Transcription, speaker separation, and summary models are not included in the
-installer. They can be downloaded when first needed or managed later from
-**Settings**.
+installer. Required components are downloaded when first needed. To prepare for
+offline work or manage existing downloads, open
+**Settings > General > Local components**.
 
 ## About the Source Code Archives
 
