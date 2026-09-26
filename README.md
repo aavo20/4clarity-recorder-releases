@@ -5,13 +5,13 @@ Official installer downloads and release notes for **4Clarity**.
 The application source code is private. This public repository contains only
 release metadata, downloadable installers, and signed update packages.
 
-## Download 4Clarity 0.2.5
+## Download 4Clarity 0.2.6
 
 | Platform | Device | Download | Release notes |
 | --- | --- | --- | --- |
-| Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_x64-setup.exe) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
-| macOS | Apple Silicon Mac (M-series) | [Apple Silicon installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_aarch64.dmg) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
-| macOS | Intel Mac | [Intel installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.5/4Clarity_0.2.5_x86_64.dmg) | [0.2.5 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5) |
+| Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.6/4Clarity_0.2.6_x64-setup.exe) | [0.2.6 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.6) |
+| macOS | Apple Silicon Mac (M-series) | [Apple Silicon installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.6/4Clarity_0.2.6_aarch64.dmg) | [0.2.6 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.6) |
+| macOS | Intel Mac | [Intel installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.2.6/4Clarity_0.2.6_x86_64.dmg) | [0.2.6 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.6) |
 
 **Choose one installer for your device from the table above.** Not sure which Mac
 you have? See [Choosing a Mac Download](#choosing-a-mac-download).
@@ -23,37 +23,44 @@ generated **Source code** archives are not application installers.
 All published versions and their release notes are available on the
 [Releases page](https://github.com/aavo20/4clarity-recorder-releases/releases).
 
-## What's New in 0.2.5
+## What's New in 0.2.6
 
-- **Email sharing:** verify your sender address, then send transcripts and
-  summaries with an optional message. Replies go to your verified address, and
-  your email session is stored in Windows Credential Manager or macOS Keychain.
-- **ZIP export and a compact Share screen:** choose selected audio, transcript,
-  and summary files for an archive. Email sharing includes text files only.
-- **Optional call reminders:** enable reminders for Zoom, Microsoft Teams, Slack,
-  Discord, and Telegram desktop apps. Recording starts only when you choose it.
-- **Startup and background options:** launch at login and keep the app available
-  from the Windows tray or macOS menu bar.
-- **Offline preparation:** download and manage local components in advance from
-  Settings, with progress, cancellation, and resume.
-- **Updated Home and Settings:** a recording overview, clearer settings tabs,
-  managed local-processing defaults, and more configurable keyboard shortcuts.
-- **Signed in-app updates:** download future updates in the app, then choose
-  **Install and restart** when ready.
-- **Reliability fixes:** improved settings-save recovery, microphone handling,
-  macOS permission feedback, and Windows call-reminder filtering.
+- **Optional automatic call recording:** enable it for your selected Zoom,
+  Microsoft Teams, Slack, Discord, or Telegram desktop apps. A compact floating
+  window lets you continue recording or discard the captured audio. Automatic
+  recording stays off until you enable it.
+- **Automatic call completion on Windows:** confirmed automatic Telegram and
+  Discord recordings can stop and save after 30 seconds without detected call
+  activity, then start transcription in the background. Manual recordings stay
+  under your control.
+- **Automatic transcription and a task queue:** saving a recording starts
+  transcription. Queue transcription and summary work for other recordings;
+  tasks run one at a time and continue while you browse. Pending tasks are not
+  restored after closing the app.
+- **Better recording navigation:** combine search with date, contact, duration,
+  and project filters, rename recordings from their menu, and browse a simpler
+  chronological list.
+- **Contact ordering and simpler sidebars:** reorder contacts by dragging or
+  using the keyboard, filter by group, and switch between active and archived
+  projects when archived projects exist.
+- **Updated summaries:** new summaries and automatic titles use the interface
+  language (English, Russian, or Ukrainian) and the Qwen3 4B local model. See
+  [Local Models](#local-models) for the new component download.
+- **Reliability fixes:** reduced false recording starts from Telegram sounds on
+  macOS, corrected generated characters, dismissible import errors, translated
+  cancellation notices, and processing workers that stop when the app quits.
 
-See the [full release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.5)
+See the [full release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.2.6)
 for all changes.
 
 ## Updating an Existing Installation
 
-**Upgrading from 0.2.4 or earlier:** download the 0.2.5 installer for your computer
+**Upgrading from 0.2.4 or earlier:** download the 0.2.6 installer for your computer
 from the table above and run it to upgrade your existing installation.
 
-**On 0.2.5:** official release builds support signed in-app updates. Check for
-updates in **Settings > About**. When a newer release is available, download it
-with progress and cancellation controls, then choose **Install and restart**.
+**On 0.2.5 or later:** official release builds support signed in-app updates.
+Check for updates in **Settings > About**. Download an available update with
+progress and cancellation controls, then choose **Install and restart**.
 Installation never starts silently. You can also use the installers above.
 
 ## Choosing a Mac Download
@@ -67,7 +74,7 @@ Both macOS builds require macOS 14.2 or later.
 
 ## Install on Windows
 
-1. Download `4Clarity_0.2.5_x64-setup.exe` from the table above.
+1. Download `4Clarity_0.2.6_x64-setup.exe` from the table above.
 2. Open the installer and follow the setup prompts.
 3. Launch 4Clarity from the Start menu or desktop shortcut.
 
@@ -95,6 +102,16 @@ Transcription, speaker separation, and summary models are not included in the
 installer. Required components are downloaded when first needed. To prepare for
 offline work or manage existing downloads, open
 **Settings > General > Local components**.
+
+**New in 0.2.6:** summaries and automatic recording titles use Qwen3 4B. The new
+summary component is about **2.5 GB** and must be downloaded even if you have an
+older summary model. Prepare it in Local components before working offline, or
+download it when generating your next summary. Automatic title generation does
+not start this download on its own.
+
+Existing recordings and summaries remain available. Upgrading does not
+regenerate saved summaries or delete older model files; unused models can be
+removed through Local components when you choose.
 
 ## About the Source Code Archives
 
