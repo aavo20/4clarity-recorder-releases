@@ -5,13 +5,13 @@ Official installer downloads and release notes for **4Clarity**.
 The application source code is private. This public repository contains only
 release metadata, downloadable installers, and signed update packages.
 
-## Download 4Clarity 0.3.0
+## Download 4Clarity 0.3.1
 
 | Platform | Device | Download | Release notes |
 | --- | --- | --- | --- |
-| Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.0/4Clarity_0.3.0_x64-setup.exe) | [0.3.0 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.0) |
-| macOS | Apple Silicon Mac (M-series) | [Apple Silicon installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.0/4Clarity_0.3.0_aarch64.dmg) | [0.3.0 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.0) |
-| macOS | Intel Mac | [Intel installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.0/4Clarity_0.3.0_x86_64.dmg) | [0.3.0 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.0) |
+| Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.1/4Clarity_0.3.1_x64-setup.exe) | [0.3.1 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.1) |
+| macOS | Apple Silicon Mac (M-series) | [Apple Silicon installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.1/4Clarity_0.3.1_aarch64.dmg) | [0.3.1 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.1) |
+| macOS | Intel Mac | [Intel installer (.dmg)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.1/4Clarity_0.3.1_x86_64.dmg) | [0.3.1 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.1) |
 
 **Choose one installer for your device from the table above.** Not sure which Mac
 you have? See [Choosing a Mac Download](#choosing-a-mac-download).
@@ -23,33 +23,36 @@ generated **Source code** archives are not application installers.
 All published versions and their release notes are available on the
 [Releases page](https://github.com/aavo20/4clarity-recorder-releases/releases).
 
-## What's New in 0.3.0
+## What's New in 0.3.1
 
-- **Local live transcription:** read draft text while recording. Retained drafts
-  stay available while the final transcript is prepared after saving. Live
-  transcription uses local components that are already downloaded.
-- **Multiple projects per recording:** add or remove links using project chips
-  and a searchable picker, or create and link a project from the recording
-  header. Existing project assignments are preserved.
-- **Recording and speaker controls:** rename recordings in place and use the
-  compact speaker roster to assign contacts, rename or merge speakers, and
-  filter the transcript by speaker.
-- **A compact floating recorder:** recording, call prompts, saving, and discarding
-  use smaller layouts. The recorder opens on the right side of the screen.
-- **Clearer progress and sharing:** see transcription stages in the sidebar or
-  recording header, cancel beside the status, and share recordings from the
-  sidebar's menu.
-- **New desktop branding:** the cyan 4Clarity icon is used on Windows and macOS.
-- **Reliability fixes:** restored live transcription in installed macOS builds,
-  improved recovery after a forced quit and handling of incomplete Telegram
-  call checks, and made live-transcript scrolling less disruptive.
+- **Summary templates:** choose from seven built-in formats for general
+  summaries, decisions and actions, team status, client or product meetings,
+  interviews, and learning. Preview templates in Settings, choose a default,
+  or select a template on a recording to generate its summary.
+- **Custom templates:** edit a template's instructions and save your own copy
+  for future summaries. Queued summaries keep the template and settings selected
+  when they were queued.
+- **Contact projects and groups:** link a contact to several projects and
+  groups from searchable header pickers, or create and assign a project or
+  group without leaving the contact.
+- **Formatted summaries and project ordering:** read, copy, and share Markdown
+  summaries, and reorder projects by dragging or with the keyboard. Existing
+  summaries remain readable, and project order is kept after restart.
+- **Playback and processing fixes:** improved macOS Now Playing and system
+  playback controls, synchronized microphone and system audio playback, and
+  clearer title-generation progress after transcription.
+- **More reliable everyday editing:** dialogs and navigation protect unsaved
+  edits, failed loads offer Retry, and failed saves preserve entered values.
+  Contact membership menus and keyboard focus work more consistently.
+- **Fewer short false recording starts in Telegram on macOS:** call detection
+  waits for about five to six seconds of sustained activity.
 
-See the [full release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.0)
+See the [full release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.1)
 for all changes.
 
 ## Updating an Existing Installation
 
-**Upgrading from 0.2.4 or earlier:** download the 0.3.0 installer for your computer
+**Upgrading from 0.2.4 or earlier:** download the 0.3.1 installer for your computer
 from the table above and run it to upgrade your existing installation.
 
 **On 0.2.5 or later:** official release builds support signed in-app updates.
@@ -68,7 +71,7 @@ Both macOS builds require macOS 14.2 or later.
 
 ## Install on Windows
 
-1. Download `4Clarity_0.3.0_x64-setup.exe` from the table above.
+1. Download `4Clarity_0.3.1_x64-setup.exe` from the table above.
 2. Open the installer and follow the setup prompts.
 3. Launch 4Clarity from the Start menu or desktop shortcut.
 
