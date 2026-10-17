@@ -7,6 +7,12 @@ release metadata, downloadable installers, and signed update packages.
 
 ## Download 4Clarity 0.3.1
 
+**Rebuilt on October 17, 2026.** These installers include the fix for macOS
+recordings failing to play when the player uses a combined audio cache.
+The application version remains **0.3.1**. If you already have 0.3.1 installed,
+download the installer for your device and reinstall it over the existing app;
+an in-app update is not offered for the same version.
+
 | Platform | Device | Download | Release notes |
 | --- | --- | --- | --- |
 | Windows | x64 PC (Intel or AMD) | [Windows installer (.exe)](https://github.com/aavo20/4clarity-recorder-releases/releases/download/v0.3.1/4Clarity_0.3.1_x64-setup.exe) | [0.3.1 release notes](https://github.com/aavo20/4clarity-recorder-releases/releases/tag/v0.3.1) |
